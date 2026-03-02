@@ -1,0 +1,50 @@
+# VCS / CI
+.git
+.github
+
+# Editors / OS
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Node dependencies (root + webui)
+node_modules
+webui/node_modules
+
+# Logs / debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Build outputs / caches
+coverage
+dist
+webui/dist
+webui/.cache
+webui/.temp
+webui/.eslintcache
+.eslintcache
+
+# Frontend build output (generated during docker build)
+app/static
+
+# Local runtime data (avoid accidentally baking user data)
+vertex
+/vertex
+app/data
+app/db
+app/logs
+app/torrents
+
+# Docker build leftovers from old workflow
+docker/src
+
+# Docs (optional, but reduces context)
+README.md
+SECURITY.md
+LICENSE
